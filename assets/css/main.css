@@ -16,6 +16,7 @@ html {
     --subheader-text: #505050;
     --mess-color: #ef2853;
     --footer-color: #a9a9a9;
+    --primary-color1: #cf8f05;
 }
 
 .clear {
@@ -1115,7 +1116,7 @@ h3 {
     color: #fff;
     text-align: center;
     line-height: 35px;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     font-weight: 600;
     cursor: pointer;
     -webkit-transform: translateX(100%);
@@ -1158,7 +1159,7 @@ h3 {
     width: 33.333%;
     height: 100%;
     text-align: center;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .products .product .product-img-info .item-box-hover .box-inner__item::before {
@@ -1184,12 +1185,12 @@ h3 {
     position: absolute;
     display: inline-block;
     bottom: calc(100% + 2 * 5px);
-    left: 50%;
+    left: 60%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     background-color: #e34444;
     white-space: nowrap;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #fff;
     height: 20px;
     line-height: 20px;
@@ -2606,4 +2607,96 @@ h3 {
 #myBtn:hover {
     background-color: #555;
     /* Add a dark-grey background on hover */
+}
+
+
+/* Detail Category */
+
+container-nav {
+    display: flex;
+}
+
+.container-nav__heading {
+    margin-top: 22px;
+    font-size: 1.6rem;
+}
+
+.container-nav__list {
+    display: flex;
+    flex: 1;
+    max-width: 100%;
+    list-style: none;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 0;
+    margin-left: 16px;
+}
+
+.container-nav__item {
+    flex-shrink: 0;
+}
+
+.container-nav__item:hover .container-nav__item-link {
+    background-color: var(--primary-color1);
+    border: 1px solid #cf8f05;
+}
+
+.container-nav__item:hover .container-nav__item-link {
+    color: white;
+}
+
+.container-nav__item-link {
+    text-decoration: none;
+    color: #003464;
+    font-weight: 600;
+    padding: 12px 16px;
+    margin: 14px 19px;
+    border: 1px solid #003464;
+    font-size: 14px;
+}
+
+.container-filter__item {
+    display: inline-flex;
+    align-items: center;
+    font-size: 1.4rem;
+    padding: 8px;
+    position: relative;
+    user-select: none;
+    margin-right: 5px;
+    width: 150px;
+    border: 1px solid #ccc;
+}
+
+.container-filter__icon-down {
+    display: block;
+    margin-left: 10px;
+    margin-top: 1px;
+}
+
+.container-filter__item:hover .container-filter__list {
+    display: block;
+}
+
+.container-filter__list {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.4);
+    background-color: white;
+    display: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.container-filter__list-item {
+    padding: 4px 8px;
+}
+
+.container-filter__list-item:hover {
+    color: white;
+    background-color: var(--primary-color1);
 }
