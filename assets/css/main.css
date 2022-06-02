@@ -2645,6 +2645,533 @@ container-nav {
     color: white;
 }
 
+
+/* SINGLE PRODUCT */
+
+.img-display {
+    overflow: hidden;
+}
+
+.img-showcase {
+    display: flex;
+    width: 100%;
+    transition: all 0.5s ease;
+}
+
+.img-showcase img {
+    min-width: 100%;
+}
+
+.img-select {
+    display: flex;
+}
+
+.img-item {
+    margin: 0.3rem;
+}
+
+.img-item:nth-child(1),
+.img-item:nth-child(2),
+.img-item:nth-child(3) {
+    margin-right: 0;
+}
+
+.img-item:hover {
+    opacity: 0.8;
+}
+
+.product-content {
+    padding: 2rem 1rem;
+}
+
+.product-content .product-rating {
+    font-size: 12px
+}
+
+.product-title {
+    font-size: 3rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    position: relative;
+    color: #12263a;
+    margin: 1rem 0;
+}
+
+.product-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.2rem;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    background: #256eff;
+    color: #fff;
+    padding: 1rem;
+    transition: all 0.5s ease;
+    border-radius: 8px;
+}
+
+.product-link:hover {
+    background: #e4a821;
+    color: white;
+}
+
+.product-rating {
+    color: #ffc107;
+}
+
+.product-rating span {
+    font-weight: 600;
+    color: #252525;
+}
+
+.product-price {
+    margin: 1rem 0;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.product-price span {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.last-price span {
+    color: #f64749;
+    text-decoration: line-through;
+}
+
+.new-price span {
+    color: #256eff;
+}
+
+.detail_product {
+    margin-left: 100px;
+}
+
+.product-detail h2 {
+    text-transform: capitalize;
+    color: #12263a;
+    padding-bottom: 0.6rem;
+}
+
+.product-detail p {
+    font-size: 0.9rem;
+    padding: 0.3rem;
+    opacity: 0.8;
+}
+
+.product-detail ul {
+    margin: 1rem 0;
+    font-size: 1.3rem;
+}
+
+.product-detail ul li {
+    margin: 0;
+    list-style: none;
+    background: url(../img/checked.png) left center no-repeat;
+    background-size: 18px;
+    padding-left: 2.7rem;
+    margin: 0.4rem 0;
+    font-weight: 800;
+    opacity: 0.9;
+    font-size: 15px;
+}
+
+.product-detail ul li span {
+    font-weight: 400;
+}
+
+.purchase-info {
+    margin: 1.5rem 0;
+    display: flex;
+}
+
+.purchase-info input,
+.purchase-info .btn {
+    border: 1.5px solid #ccc;
+    text-align: center;
+    padding: 0.45rem 0.8rem;
+    outline: 0;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    font-size: 15px;
+}
+
+.purchase-info input {
+    width: 60px;
+}
+
+@media screen and (min-width: 992px) {
+    .card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1.5rem;
+    }
+    .card-wrapper {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .product-imgs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .product-content {
+        padding-top: 0;
+    }
+}
+
+.description {
+    font: menu;
+    font-size: 18px;
+    line-height: 1.4;
+    padding: 0;
+    margin: 0;
+}
+
+.description .section {
+    padding-top: 4rem;
+    width: 50%;
+    margin: auto;
+}
+
+.description .section h1 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+details[open] summary~* {
+    animation: open 0.3s ease-in-out;
+}
+
+@keyframes open {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+details summary::-webkit-details-marker {
+    display: none;
+}
+
+details summary {
+    width: 100%;
+    padding: 0.5rem 0;
+    border-top: 1px solid black;
+    position: relative;
+    cursor: pointer;
+    font-size: 2.25rem;
+    font-weight: 500;
+    list-style: none;
+}
+
+details summary:after {
+    content: "+";
+    color: black;
+    position: absolute;
+    font-size: 2.75rem;
+    line-height: 0;
+    margin-top: 0.75rem;
+    right: 0;
+    font-weight: 400;
+    transform-origin: center;
+    transition: 200ms linear;
+}
+
+details[open] summary:after {
+    transform: rotate(45deg);
+    font-size: 3rem;
+}
+
+details summary {
+    outline: 0;
+}
+
+details p {
+    font-size: 15px;
+    margin: 0 3rem 1rem;
+    padding-top: 1rem;
+}
+
+
+/* share button */
+
+.media-button {
+    position: fixed;
+    top: 130px;
+    right: 80px;
+}
+
+#share-circle,
+#share-button {
+    position: relative;
+    display: block;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+}
+
+#share-button {
+    background: #e74c3c;
+    color: #FFF;
+    cursor: pointer;
+    box-shadow: 0 2px 4px #A4A4A4;
+}
+
+#share-button .icon-share,
+#share-button .icon-x {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 52px;
+    height: 52px;
+    line-height: 52px;
+    font-size: 28px;
+    text-align: center;
+}
+
+#share-button .icon-share {
+    transform: scale(1);
+    opacity: 1;
+}
+
+#share-button .icon-x {
+    transform: scale(0) rotate(0);
+    opacity: 0;
+}
+
+.share {
+    display: block;
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    color: #FFF;
+    line-height: 28px;
+    font-size: 14px;
+    text-align: center;
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+
+.share.facebook {
+    background: #3B5998;
+    top: 14px;
+    left: 14px;
+    transition-delay: 0.08s;
+}
+
+.share.facebook.opened {
+    background: #3B5998;
+    top: 0;
+    left: -44px;
+}
+
+.share.twitter {
+    background: #3B5998;
+    top: 14px;
+    left: 14px;
+    transition-delay: 0.16s;
+}
+
+.share.twitter.opened {
+    background: #55ACEE;
+    top: -32px;
+    left: -24px;
+}
+
+.share.googleplus {
+    background: #3B5998;
+    top: 14px;
+    left: 14px;
+    transition-delay: 0.24s;
+}
+
+.share.googleplus.opened {
+    background: #DD4B39;
+    top: -44px;
+    left: 14px;
+}
+
+.share.linkedin {
+    background: #3B5998;
+    top: 14px;
+    right: 14px;
+    transition-delay: 0.32s;
+}
+
+.share.linkedin.opened {
+    background: #006FA6;
+    top: -32px;
+    right: -24px;
+}
+
+.share.tumblr {
+    background: #3B5998;
+    top: 14px;
+    right: 14px;
+    transition-delay: 0.4s;
+}
+
+.share.tumblr.opened {
+    background: #36465D;
+    top: 0;
+    right: -44px;
+}
+
+.share.nodelay {
+    transition: 0.6s ease;
+    transition-delay: 0s;
+}
+
+.button-expand {
+    animation-name: buttonanimation;
+    animation-duration: 0.8s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+.button-close {
+    animation-name: buttonanimationx;
+    animation-duration: 0.8s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+.share-expand {
+    animation-name: share-expand-animation;
+    animation-duration: 0.8s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+#share-button .icon-share.closed {
+    transform: scale(0);
+    opacity: 0;
+}
+
+.x-expand {
+    animation-name: x-expand-animation;
+    animation-delay: 0.6s;
+    animation-duration: 0.8s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+#share-button .icon-x.expanded {
+    transform: scale(1) rotate(675deg);
+    opacity: 1;
+}
+
+.share-close {
+    animation-name: share-close-animation;
+    animation-delay: 0.3s;
+    animation-duration: 0.8s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+.x-close {
+    animation-name: x-close-animation;
+    animation-duration: 0.4s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+@keyframes buttonanimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        background: #c0392b;
+        transform: scale(0.8);
+    }
+    100% {
+        background: #e74c3c;
+        transform: scale(1);
+        box-shadow: 0 0 0 transparent;
+    }
+}
+
+@keyframes buttonanimationx {
+    0% {
+        background: #e74c3c;
+        transform: scale(1);
+        box-shadow: 0 0 0 transparent;
+    }
+    50% {
+        background: #c0392b;
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 2px 4px #AAA;
+    }
+}
+
+@keyframes share-expand-animation {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+@keyframes x-expand-animation {
+    0% {
+        transform: scale(0) rotate(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1) rotate(675deg);
+        opacity: 1;
+    }
+}
+
+@keyframes share-close-animation {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes x-close-animation {
+    0% {
+        transform: scale(1) rotate(675deg);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0) rotate(630deg);
+        opacity: 0;
+    }
+}
+
 .container-nav__item-link {
     text-decoration: none;
     color: #003464;
